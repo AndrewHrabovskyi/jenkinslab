@@ -1,7 +1,9 @@
 import unittest
-import xmlrunner
+#import xmlrunner
 
 # class for Node with numbers
+def main():
+    print("Hello");
 class Node:
     def __init__(self, num):
         self.num = num
@@ -87,6 +89,8 @@ class MyTest(unittest.TestCase):
         self.assertEqual(mustBeFirst.num, pQueue.delete())
 
 if __name__ == '__main__':
-    runner = xmlrunner.XMLTestRunner(output='test-reports')
-    unittest.main(testRunner=runner)
+   # runner = xmlrunner.XMLTestRunner(output='test-reports')
+    #unittest.main(testRunner=runner)
+   main();
+    
         
